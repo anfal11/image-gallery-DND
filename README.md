@@ -4,3 +4,5 @@
 - Live Link - 2: https://image-gallery-dnd.surge.sh/
 
 - [Notion Documentation Link] - (https://foam-silicon-918.notion.site/Documentation-for-Image-Gallery-Drag-and-Drop-2c73a7f2fc6b4cda90012a240ae0d8eb?pvs=4)
+
+After clone my repo, do not forget to install [npm i], otherwise project will not run.
