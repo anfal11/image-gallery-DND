@@ -105,7 +105,7 @@ const ImageGallery = () => {
     }
   };
 
-    // Find the featured image based on the "featured" property or position.
+    // Find the featured image based on the "featured" position.
     const featuredImage = images.find((image) => image.featured) || images[0];
 
     // Apply a distinct class to the featured image.
