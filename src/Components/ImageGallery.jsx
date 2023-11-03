@@ -1,4 +1,5 @@
 // importing some libraries and images
+
 import { useState } from "react";
 import { DndContext } from "@dnd-kit/core";
 import { Draggable } from "./Draggable";
@@ -21,7 +22,7 @@ const ImageGallery = () => {
 
   //images state
   const [images, setImages] = useState([
-    { id: "big-image", src: img11 },
+    { id: "big-image", src: img11,  featured: true },
     { id: "image1", src: img1 },
     { id: "image2", src: img2 },
     { id: "image3", src: img3 },
@@ -104,6 +105,12 @@ const ImageGallery = () => {
     }
   };
 
+    // Find the featured image based on the "featured" property or position.
+    const featuredImage = images.find((image) => image.featured) || images[0];
+
+    // Apply a distinct class to the featured image.
+    const isFeatured = (image) => image.id === featuredImage.id;
+
   // Design Parts of image gallery 
   return (
     <DndContext onDragEnd={handleDragEnd}>
@@ -150,7 +157,7 @@ const ImageGallery = () => {
                 key={image.id}
                 className={`relative group ${
                   image.id === "big-image" ? "col-span-2 row-span-2" : ""
-                }`}
+                } ${isFeatured(image) ? 'featured' : ''}`}
               >
                 <Droppable id={image.id}>
                   <Draggable id={image.id}>
