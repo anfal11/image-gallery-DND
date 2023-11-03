@@ -1,8 +1,6 @@
-# React + Vite
+# React Image Gallery with Drag and Drop Feature....
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Live Link - 1: https://image-gallery-dnd-beta.vercel.app/ 
+- Live Link - 2: https://image-gallery-dnd.surge.sh/
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Notion Documentation Link] - (https://foam-silicon-918.notion.site/Documentation-for-Image-Gallery-Drag-and-Drop-2c73a7f2fc6b4cda90012a240ae0d8eb?pvs=4)
